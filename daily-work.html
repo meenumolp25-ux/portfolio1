@@ -69,129 +69,1311 @@
         </div>
     </section>
 
-    <!-- ===== DAILY LOGS (CARDS) ===== -->
-    <section class="pmvikas-components">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Class Notes & Logs</span>
-                <h2 class="section-title">Session <span class="text-gradient">Highlights</span></h2>
-                <p class="section-subtitle">A timeline of my learnings from basic components to advanced sequential logic circuits.</p>
+    <!-- ===== SEARCH & FILTERS ===== -->
+    <div class="controls-container">
+        <div class="controls-panel">
+            <div class="search-box-wrapper">
+                <input type="text" class="search-input" placeholder="Search topics, tags, details, or days...">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
             </div>
-
-            <div class="bento-grid">
-                <!-- DAY 1 -->
-                <div class="bento-card bento-col-span-2">
-                    <div class="bento-content">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">D1</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                        </div>
-                        <h3 class="bento-title">Network Theory</h3>
-                        <p class="bento-text">Fundamentals of circuits, resistors, tolerance, and potential dividers.</p>
-                        <ul class="bento-list">
-                            <li class="bento-tag">Ohm's Law</li>
-                            <li class="bento-tag">KCL/KVL</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- SESSION 2 -->
-                <div class="bento-card bento-col-span-2">
-                    <div class="bento-content">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">S2</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
-                        </div>
-                        <h3 class="bento-title">Computer Networks & IoT</h3>
-                        <p class="bento-text">Data communications and popular Machine-to-Machine applications.</p>
-                        <ul class="bento-list">
-                            <li class="bento-tag">IIoT</li>
-                            <li class="bento-tag">Space IoT</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- DIGITAL ELECTRONICS 1 (FEATURED) -->
-                <div class="bento-card bento-col-span-4 glass">
-                    <div class="bento-content" style="align-items:center; text-align:center;">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">DE</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
-                        </div>
-                        <h3 class="bento-title">Digital Electronics & Logic</h3>
-                        <p class="bento-text" style="max-width:600px;">The absolute foundation of modern IoT and computation. From the evolution of vacuum tubes to VLSI, understanding binary systems, noise immunity, and the profound power of abstraction.</p>
-                    </div>
-                </div>
-
-                <!-- DAY 2 -->
-                <div class="bento-card bento-col-span-2 bento-row-span-2">
-                    <div class="bento-content">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">D2</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-                        </div>
-                        <h3 class="bento-title">Diodes & Rectification</h3>
-                        <p class="bento-text">Understanding internal components of chargers and practical applications.</p>
-                        <ul class="bento-list">
-                            <li class="bento-tag">VI characteristics</li>
-                            <li class="bento-tag">Rectifiers</li>
-                            <li class="bento-tag">Filters</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- DIGITAL ELECTRONICS 2 -->
-                <div class="bento-card bento-col-span-2">
-                    <div class="bento-content">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">LC</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/></svg>
-                        </div>
-                        <h3 class="bento-title">Sequential Circuits</h3>
-                        <p class="bento-text">Synthesis of logic networks, K-Maps, and Flip-Flops.</p>
-                    </div>
-                </div>
-
-                <!-- DAY 6 -->
-                <div class="bento-card bento-col-span-2">
-                    <div class="bento-content">
-                        <div class="vikas-card-number" style="position:absolute; top:20px; right:24px; font-size:3rem; font-weight:800; opacity:0.05;">D6</div>
-                        <div class="bento-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                        </div>
-                        <h3 class="bento-title">IoT Product Ideation</h3>
-                        <p class="bento-text">Designing a smart home integrating system with live traffic routing.</p>
-                    </div>
-                </div>
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="all">All Days</button>
+                <button class="filter-btn" data-filter="networks">Network Theory</button>
+                <button class="filter-btn" data-filter="electronics">Digital Electronics</button>
+                <button class="filter-btn" data-filter="arduino">IoT & Arduino</button>
+                <button class="filter-btn" data-filter="cloud">Cloud & AWS</button>
+                <button class="filter-btn" data-filter="simulation">Simulations</button>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- ===== DETAILED NOTES SECTION ===== -->
-    <section class="pmvikas-impact">
+    <!-- ===== DAILY LOGS SECTION ===== -->
+    <section class="pmvikas-components" style="padding-top: 20px;">
         <div class="section-container">
-            <div class="vikas-impact" style="text-align: left;">
-                <h3 class="impact-title" style="text-align: center; margin-bottom: 2rem;">Deep Dive: <span class="text-gradient">Boolean Algebra & Synthesis</span></h3>
+            
+            <!-- EMPTY LOGS STATE -->
+            <div class="empty-logs-state">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <h3>No Logs Found</h3>
+                <p>We couldn't find any session logs matching your search queries or category filters.</p>
+            </div>
+
+            <!-- PHASE 1 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 1</span>
+                    <h2 class="phase-title">Circuit Foundations &amp; Basic Electronics</h2>
+                </div>
                 
-                <div style="color: var(--text-secondary); max-width: 800px; margin: 0 auto; padding: 2rem; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
-                    <h4 style="color: var(--primary-light); margin-bottom: 1rem; font-family: var(--font-primary); font-size: 1.4rem;">Fundamental Logic Gates</h4>
-                    <p style="margin-bottom: 1.5rem;">
-                        <strong>AND Gate:</strong> Created by connecting two switches in series. Output is 1 only if all inputs are 1.<br>
-                        <strong>OR Gate:</strong> Created by connecting two switches in parallel. Output is 1 if any input is 1.<br>
-                        <strong>NOT Operation:</strong> Inverts the value (1 becomes 0, and 0 becomes 1).
-                    </p>
+                <div class="logs-grid">
+                    <!-- Day 1 -->
+                    <div class="log-card" data-categories="networks" data-tags="Resistors, Ohm's Law, KCL, KVL, Network Theory">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D01</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Resistors, Ohm's Law, KCL &amp; KVL</h3>
+                                    <span class="log-meta">Faculty: Dr. Anand — HOD ECE, IIIT Kottayam</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Network Theory</span>
+                                        <span class="log-tag">Resistors</span>
+                                        <span class="log-tag">Ohm's Law</span>
+                                        <span class="log-tag">Kirchhoff</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <p><strong>Course Overview:</strong> Core areas covered: Network Theory, Circuits &amp; Networks, Basic Electronics, and Rectification. Real-world example: understanding the hardware inside a heart-rate monitor.</p>
+                                        <ul>
+                                            <li><strong>Rectification &amp; Inside the Charger:</strong> Studied the internal components of a charger — a full-wave rectifier passing through a bridge rectifier to produce half-wave output, then filtered through RC, RLC, or LC filters (R = Resistance, L = Inductance, C = Capacitor). RC filter is the most efficient. Output starts as fluctuating DC, converted by the rectifier into actual DC. A potential / voltage divider (e.g., 12V → 5V) works using resistances.</li>
+                                            <li><strong>Resistors:</strong> A resistor doesn't have polarity — it's a two-terminal device measured in ohms. Modern electronics uses surface-mount resistors on boards. Resistor Color Code: B B R O Y G B V G W — S G (Black, Brown, Red, Orange, Yellow, Green, Blue, Violet, Grey, White — Silver, Gold).</li>
+                                            <li><strong>Series &amp; Parallel Circuits:</strong>
+                                                <ul>
+                                                    <li>Series: current is same, voltage differs. R_total = R₁ + R₂ + ...</li>
+                                                    <li>Parallel: voltage is same, current differs. 1/R_total = 1/R₁ + 1/R₂ + ...</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Ohm's Law:</strong> V = R × I (at constant temperature). Ammeter is connected in series, and Voltmeter is connected in parallel.</li>
+                                            <li><strong>Kirchhoff's Laws:</strong>
+                                                <ul>
+                                                    <li>KCL (Kirchhoff's Current Law): Total current entering a node = total current leaving the node.</li>
+                                                    <li>KVL (Kirchhoff's Voltage Law): Total voltage rise across a closed loop = total voltage drop.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Divider Rules:</strong>
+                                                <ul>
+                                                    <li>Voltage Divider: V(R₁) = R₁ / (R₁ + R₂) × V_total (Example: 12V → 5V using two resistors).</li>
+                                                    <li>Current Divider: Works inversely — verify theoretically and practically using simulators.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Advanced Analysis:</strong> Covered Nodal Analysis, Super-Mesh Analysis, Super-Node Analysis, Superposition Principle, and various Network Theorems.</li>
+                                        </ul>
+                                        <h4>Exercises</h4>
+                                        <ol>
+                                            <li>Use online simulators or virtual labs to verify circuit behaviour.</li>
+                                            <li>Practice resistor colour-code identification.</li>
+                                            <li>Calculate effective resistance in series &amp; parallel circuits with currents.</li>
+                                            <li>Solve problems on Ohm's Law, KCL, KVL, CDR, VDR (try with ChatGPT and simulators).</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h4 style="color: var(--primary-light); margin-bottom: 1rem; font-family: var(--font-primary); font-size: 1.4rem;">Network Synthesis Process</h4>
-                    <p style="margin-bottom: 1.5rem;">
-                        Network synthesis is the inverse of analysis. It involves starting with a desired network function (like a Boolean expression or truth table) and designing a physical circuit (network) that realizes that function using logic gates or passive components.
-                    </p>
+                    <!-- Day 2 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Diodes, Rectifiers, Switches, Applications">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D02</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Diodes &amp; Rectifiers</h3>
+                                    <span class="log-meta">Faculty: Dr. Anand — HOD ECE, IIIT Kottayam</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Diodes</span>
+                                        <span class="log-tag">Rectifiers</span>
+                                        <span class="log-tag">Applications</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Diodes:</strong> Studied the V–I characteristics of a diode — how current flows in forward bias and gets blocked in reverse bias. Explored using a diode as a switch in circuits.</li>
+                                            <li><strong>Rectifiers:</strong> Built understanding of half-wave rectifiers and full-wave rectifiers — how diodes convert AC to pulsating DC. Explored bridge rectifier configurations.</li>
+                                            <li><strong>Other Applications:</strong> Explored additional uses: clamper circuits and switch regulators. These are critical in power-supply design and signal conditioning.</li>
+                                        </ul>
+                                        <h4>Exercises</h4>
+                                        <ol>
+                                            <li>Plot the V–I characteristics of a diode.</li>
+                                            <li>Demonstrate a diode behaving as a switch.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h4 style="color: var(--primary-light); margin-bottom: 1rem; font-family: var(--font-primary); font-size: 1.4rem;">Karnaugh Maps (K-Maps)</h4>
-                    <p>
-                        A graphical method used to simplify Boolean expressions, minimizing hardware cost and improving circuit efficiency. By grouping adjacent 1s (for Sum of Products - SOP) or 0s (for Product of Sums - POS), we can eliminate variables. Incompletely specified functions ("Don't Care" conditions) can be treated as '0' or '1' to create the largest possible cell groups, further reducing gate counts.
-                    </p>
+                    <!-- Day 3 -->
+                    <div class="log-card" data-categories="networks" data-tags="IEEE 802.3, IEEE 802.11, Data Communications, VS Code, Dev Setup">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D03</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Computer Networks &amp; VS Code Setup</h3>
+                                    <span class="log-meta">Faculty: Session 1 &amp; 2 — IIIT Kottayam</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">IEEE 802.3</span>
+                                        <span class="log-tag">IEEE 802.11</span>
+                                        <span class="log-tag">Data Comm</span>
+                                        <span class="log-tag">Dev Setup</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session 1 — Dev Environment Setup:</strong> Installed VS Code inside a virtual machine for coding and programming. Set up the workspace for future lab sessions.</li>
+                                            <li><strong>Session 2 — Computer Networks:</strong> Introduction to basic concepts of computer networks. Covered IEEE 802.3 (Ethernet) and IEEE 802.11 (Wi-Fi) standards — their basics and connection types.</li>
+                                            <li><strong>Data Communications:</strong> Explored the five components of data communication:
+                                                <ul>
+                                                    <li>Sender: The device that sends the data message, using protocols to structure it.</li>
+                                                    <li>Medium: The physical path by which the message travels from sender to receiver.</li>
+                                                    <li>Message: The information (data) to be communicated.</li>
+                                                    <li>Receiver: The device that receives the message, using protocols to decode it.</li>
+                                                    <li>Protocol: The set of rules governing data communication between sender and receiver.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 -->
+                    <div class="log-card" data-categories="arduino" data-tags="M2M, IoT, Healthcare, Smart Homes, IIoT, Space-IoT">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D04</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">IoT Fundamentals &amp; M2M Applications</h3>
+                                    <span class="log-meta">Faculty: Shajulin Sir — 13/04/2026</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">IoT</span>
+                                        <span class="log-tag">M2M</span>
+                                        <span class="log-tag">Smart Systems</span>
+                                        <span class="log-tag">Research</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Popular M2M Applications:</strong>
+                                                <ul>
+                                                    <li>🏥 Healthcare: Health and wellbeing monitoring systems.</li>
+                                                    <li>🏠 Smart Homes: Intelligent wearable security systems.</li>
+                                                    <li>🏭 IIoT: Logistics and cargo handling operations.</li>
+                                                    <li>🚗 ITS: Automated traffic-control solutions.</li>
+                                                    <li>🛒 Smart Retail: Asset management, tracking, smart displays.</li>
+                                                    <li>💳 Smart Payments: Cash payment and inventory management.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>IoT Subsets:</strong>
+                                                <ul>
+                                                    <li>IIoT: Industrial — smart factories, logistics.</li>
+                                                    <li>CIoT: Consumer — wearables, gadgets.</li>
+                                                    <li>Space-IoT: Overcoming terrestrial coverage limitations.</li>
+                                                    <li>IoM: Internet of Mirrors — beauty &amp; healthcare.</li>
+                                                    <li>IIoMT: Intelligent Internet of Medical Things.</li>
+                                                    <li>NSAIoT: Neuro-symbolic AI + IoT for trustworthiness.</li>
+                                                    <li>ITS: AI-driven traffic, road safety, pedestrian prediction.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Research Domains &amp; Challenges:</strong> Key challenge: achieving a trustworthy IoT ecosystem through advanced AI integration. Major application domains include Smart Cities, Smart Agriculture, and Smart Assisted Living — including special suits with integrated clothing that connects to mobile devices to monitor personal health.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 5 -->
+                    <div class="log-card" data-categories="arduino,cloud" data-tags="Project, Ideation, Smart Home, Cybersecurity, IoT">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D05</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">IoT Product Ideation — Smart Home &amp; Cybersecurity</h3>
+                                    <span class="log-meta">Faculty: Task Session — Day 6 Activity</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Project</span>
+                                        <span class="log-tag">Smart Home</span>
+                                        <span class="log-tag">Cybersecurity</span>
+                                        <span class="log-tag">IoT</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Task:</strong> Design a real-life product using IoT — solve a genuine problem by connecting it with IoT technology.</li>
+                                            <li><strong>Smart Home Integrating System with Cybersecurity:</strong> A smart-city solution designed especially for elderly grandparents — integrating smart home automation with live traffic monitoring and a cybersecurity layer. All cameras, gadgets, and smart devices connect to the internet for seamless access.</li>
+                                            <li><strong>Key Features:</strong>
+                                                <ul>
+                                                    <li>Delivery personnel can access home/location easily.</li>
+                                                    <li>If a crime occurs, the cyber wing can instantly identify threats.</li>
+                                                    <li>Emergency SOS automatically sends alerts to appropriate bureaus.</li>
+                                                    <li>Future plan: a truly connected smart city.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- PHASE 2 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 2</span>
+                    <h2 class="phase-title">Digital Systems &amp; Microprocessors</h2>
+                </div>
+                
+                <div class="logs-grid">
+                    <!-- Day 6 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Vacuum Tubes, Semiconductors, Transistors, IC, Moore's Law">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D06</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">History of Electronics &amp; Components</h3>
+                                    <span class="log-meta">Faculty: Dr. Vineeth (Wireless Comm.) — 22/05/2026</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">IC Evolution</span>
+                                        <span class="log-tag">Components</span>
+                                        <span class="log-tag">History</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Evolution of Electronics:</strong> Traced the journey from vacuum tubes to modern integrated circuits:
+                                                <ul>
+                                                    <li>1904: Electrode Tube / Vacuum Tube — John Fleming</li>
+                                                    <li>1906: Vacuum Triode (first transistor concept) — Lee De Forest</li>
+                                                    <li>1947: Transistor invented → era of semiconductors — Bardeen, Brattain, Shockley (Bell Labs)</li>
+                                                    <li>1957: Integrated Circuit (IC) demonstrated — Jack Kilby</li>
+                                                    <li>SSI → MSI → VLSI → ULSI (Moore's Law)</li>
+                                                    <li>Intel 4004 (4-bit microprocessor)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 7 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Analog, Digital, Logic Gates, Number Systems, Abstraction, DIP">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D07</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Digital Electronics — Logic Gates &amp; Boolean Algebra</h3>
+                                    <span class="log-meta">Faculty: Dr. Vineeth — 22/05/2026 (continued)</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Boolean</span>
+                                        <span class="log-tag">Logic Gates</span>
+                                        <span class="log-tag">Number Systems</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Analog vs Digital:</strong>
+                                                <ul>
+                                                    <li>Analog: sinusoidal signals with infinite possible values — very difficult to process.</li>
+                                                    <li>Digital: only two discrete values (0 and 1). Easier to process, noise-immune, modular designs possible.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Advantages of Digital Systems:</strong> Noise immunity, power of abstraction, modular designs, faster design completion, software-tools ease, and programmability.</li>
+                                            <li><strong>Logic Gates — The Building Blocks:</strong>
+                                                <ul>
+                                                    <li>AND: Switches in series | Output 1 only if ALL inputs are 1.</li>
+                                                    <li>OR: Switches in parallel | Output 1 if ANY input is 1.</li>
+                                                    <li>NOT: Inverter | Output is the inverse of input.</li>
+                                                    <li>Other gates: NAND, NOR, XOR, XNOR. Digital Trainer Kit uses ICs in Dual In-Line Package (DIP).</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Number Systems:</strong> Covered conversions between Decimal, Binary, Hexadecimal, and Octal. Also: 1's complement and 2's complement for signed numbers.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 8 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Combinational, Half Adder, Full Adder, Network Analysis, Synthesis">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D08</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Combinational Circuits — Adders, MUX, Decoders</h3>
+                                    <span class="log-meta">Faculty: Dr. Vineeth — Continued</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Half Adder</span>
+                                        <span class="log-tag">Full Adder</span>
+                                        <span class="log-tag">Synthesis</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Network Analysis &amp; Synthesis:</strong>
+                                                <ul>
+                                                    <li>Analysis: given a circuit → find current, voltage, power (KCL, KVL, Mesh, Nodal, Superposition, Thevenin, Norton).</li>
+                                                    <li>Synthesis: given a desired function → design the circuit using AND, OR, NOT gates (Sum-of-Products form).</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Half Adder:</strong>
+                                                <ul>
+                                                    <li>Equations: Sum: S = A ⊕ B (XOR), Carry: C = A · B (AND)</li>
+                                                    <li>Truth Table:
+                                                        <pre>A | B | Sum | Carry
+0 | 0 |  0  |   0
+0 | 1 |  1  |   0
+1 | 0 |  1  |   0
+1 | 1 |  0  |   1</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Full Adder:</strong>
+                                                <ul>
+                                                    <li>Equations: Sum: S = A ⊕ B ⊕ Cᵢₙ, Carry: Cₒᵤₜ = AB + Cᵢₙ(A ⊕ B)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 9 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Sequential, Flip-Flops, Memory, Counters, Synchronous, Asynchronous">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D09</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Sequential Logic — Flip-Flops &amp; State Machines</h3>
+                                    <span class="log-meta">Faculty: Dr. Vineeth — Continued</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Flip-Flops</span>
+                                        <span class="log-tag">Counters</span>
+                                        <span class="log-tag">Sequential</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Combinational vs Sequential:</strong>
+                                                <ul>
+                                                    <li>Combinational: output depends only on present inputs.</li>
+                                                    <li>Sequential: output depends on present inputs + previous states (memory).</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Types of Sequential Circuits:</strong>
+                                                <ul>
+                                                    <li>Synchronous: Uses clock signal. State changes at clock pulses. Easier to design. Examples: counters, registers, digital clocks.</li>
+                                                    <li>Asynchronous: No clock. State changes immediately on input change. Faster but complex. Examples: ripple counters.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Flip-Flops — Memory Elements:</strong>
+                                                <ul>
+                                                    <li>SR: Inputs: S, R. Behavior: Set / Reset. S=R=1 is invalid.</li>
+                                                    <li>Explore other Flip-Flops (D, JK, T) and state transition diagrams.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 10 -->
+                    <div class="log-card" data-categories="arduino,electronics" data-tags="Microprocessors, Microcontrollers, CPU, RAM, Embedded, IoT Edge">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D10</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Microprocessors &amp; Microcontrollers in IoT</h3>
+                                    <span class="log-meta">Faculty: Dr. Delly Thomas — Day 10</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Microprocessors</span>
+                                        <span class="log-tag">Microcontrollers</span>
+                                        <span class="log-tag">IoT Edge</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Focus:</strong> Introduced the difference between general-purpose microprocessors and embedded microcontrollers, and explained why microcontrollers are the preferred building blocks for IoT edge devices.</li>
+                                            <li><strong>Microprocessor vs Microcontroller:</strong>
+                                                <ul>
+                                                    <li>Microprocessor: CPU only. Requires external memory, I/O controllers, and support chips. Suited for desktop computers and systems that need high compute flexibility.</li>
+                                                    <li>Microcontroller: Single-chip embedded system with CPU, RAM, flash, and peripherals. Ideal for IoT sensors, actuators, and battery-powered devices.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 11 -->
+                    <div class="log-card" data-categories="simulation" data-tags="Keil, Proteus, SIM8085, IDE, Debugging, Practicals">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D11</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Keil, Proteus and SIM8085 Practicals</h3>
+                                    <span class="log-meta">Faculty: Dr. Delly Thomas (Continued)</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Keil</span>
+                                        <span class="log-tag">Proteus</span>
+                                        <span class="log-tag">SIM8085</span>
+                                        <span class="log-tag">Practicals</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Hands-on practical session focusing on three critical embedded development tools: Keil µVision, Proteus Design Suite, and SIM8085 simulator. These tools are essential for microprocessor/microcontroller design, simulation, and verification.</li>
+                                            <li><strong>SIM8085:</strong> Writing and testing 8085 microprocessor assembly instructions (data transfer, arithmetic operations, registers).</li>
+                                            <li><strong>Keil &amp; Proteus:</strong> Writing C/Assembly code for microcontrollers, compiling it to hex files in Keil, and simulating schematic circuits with interactive inputs in Proteus.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 3 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 3</span>
+                    <h2 class="phase-title">Embedded Systems, Networks &amp; Cloud Infrastructure</h2>
+                </div>
+                
+                <div class="logs-grid">
+                    <!-- Day 12 -->
+                    <div class="log-card" data-categories="electronics" data-tags="Embedded Systems, Hardware, Firmware, Real-Time, Optimization">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D12</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Embedded Systems Fundamentals</h3>
+                                    <span class="log-meta">Faculty: Dr. S. Venkitesh</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Embedded Systems</span>
+                                        <span class="log-tag">Hardware</span>
+                                        <span class="log-tag">Firmware</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Comprehensive introduction to embedded systems — computing systems designed for specific tasks with hardware and software integration. Explored the distinction between general-purpose and embedded computing.</li>
+                                            <li><strong>Embedded System Characteristics:</strong>
+                                                <ul>
+                                                    <li>Single-Purpose Design: Each embedded system performs a specific task or set of related tasks in a dedicated manner.</li>
+                                                    <li>Resource Constraints: Limited memory (RAM/Flash), processing power, and energy. Must optimize for efficiency.</li>
+                                                    <li>Real-Time Operation: Strict timing requirements — must respond to events within deadlines. Critical in safety systems.</li>
+                                                    <li>Hardware-Software Co-design: Firmware tightly coupled to hardware. Cannot be upgraded like general-purpose software.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 13 -->
+                    <div class="log-card" data-categories="networks,cloud" data-tags="LAN, WAN, WLAN, TCP/IP, Protocols, MQTT, DNS, FTP, Layers">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D13</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Networking and Cloud Basics</h3>
+                                    <span class="log-meta">Faculty: Dr. Koppala Guravaiah</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Networking</span>
+                                        <span class="log-tag">TCP/IP</span>
+                                        <span class="log-tag">Cloud</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Introduction to network fundamentals and cloud computing — essential for IoT and modern embedded systems that require remote data transmission and processing.</li>
+                                            <li><strong>Network Architecture:</strong>
+                                                <ul>
+                                                    <li>LAN (Local Area Network): Limited geographic scope. High speed (Ethernet), low latency. Used in offices, homes.</li>
+                                                    <li>WAN (Wide Area Network): Large geographic coverage. Connects LANs via ISP infrastructure. Examples: Internet, cellular networks.</li>
+                                                    <li>WLAN (Wireless LAN): WiFi standard (IEEE 802.11). Convenient but lower range and speed than wired Ethernet.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>TCP/IP Protocol Stack:</strong> Standard model for internet communication — four layers:
+                                                <ul>
+                                                    <li>Layer 4: Application | Protocols: HTTP, HTTPS, MQTT, CoAP, DNS, SMTP, FTP | Purpose: User applications and services.</li>
+                                                    <li>Layer 3: Transport | Protocols: TCP (reliable), UDP (fast) | Purpose: End-to-end communication and flow control.</li>
+                                                    <li>Layer 2: Internet | Protocols: IP (IPv4, IPv6), ICMP | Purpose: Routing and logical addressing.</li>
+                                                    <li>Layer 1: Link | Protocols: Ethernet, WiFi, PPP, ARP | Purpose: Physical transmission and MAC addressing.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 14 -->
+                    <div class="log-card" data-categories="networks,simulation" data-tags="Cisco Packet Tracer, Simulation, Routers, Switches, Subnets">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D14</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Cisco Packet Tracer - Network Simulation</h3>
+                                    <span class="log-meta">Faculty: Dr. Koppala Guravaiah (Continued)</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Packet Tracer</span>
+                                        <span class="log-tag">Simulation</span>
+                                        <span class="log-tag">Routers</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Hands-on practical session using Cisco Packet Tracer — a network simulation tool for designing, building, and troubleshooting network topologies. Essential for learning practical networking concepts.</li>
+                                            <li><strong>Cisco Packet Tracer Overview:</strong>
+                                                <ul>
+                                                    <li>Visual Design: drag-and-drop network components.</li>
+                                                    <li>Real-time Simulation: observe packet flow in real-time.</li>
+                                                    <li>Device Configuration: configure routers, switches, and devices with CLI and GUI.</li>
+                                                    <li>Simulation Mode: trace individual packets through the network to identify failure points.</li>
+                                                    <li>Multiple Subnets: design complex multi-network topologies.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Network Components:</strong> Routers, Switches, and End Devices (PCs, Laptops, IoT nodes).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 15 -->
+                    <div class="log-card" data-categories="networks,simulation" data-tags="ACL, Standard ACL, Extended ACL, Dynamic Routing, OSPF, VLAN">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D15</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Advanced Cisco Packet Tracer - ACLs &amp; Routing</h3>
+                                    <span class="log-meta">Faculty: Dr. Koppala Guravaiah (Continued)</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">ACLs</span>
+                                        <span class="log-tag">OSPF</span>
+                                        <span class="log-tag">VLAN</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Advanced concepts in Cisco Packet Tracer focusing on network security, dynamic routing protocols, and access control. Topics covered include Access Control Lists (ACLs), Open Shortest Path First (OSPF) routing protocol, and VLAN implementation.</li>
+                                            <li><strong>Access Control Lists (ACLs):</strong> ACLs are security filters that control traffic flowing in and out of network interfaces. Applied to router interfaces to permit or deny packets based on source/destination IP, protocol type, and port numbers.
+                                                <ul>
+                                                    <li>Standard ACL: Filters based on source IP address only. Numbered (1-99) or named. Simple but limited.</li>
+                                                    <li>Extended ACL: Filters based on source/destination IP, protocol (TCP/UDP), and port numbers. More granular control. Numbered (100-199) or named.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Example Standard ACL Configuration:</strong>
+                                                <pre>access-list 1 permit 192.168.1.0 0.0.0.255
+access-list 1 deny any
+interface FastEthernet0/1
+ ip access-group 1 in</pre>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 16 -->
+                    <div class="log-card" data-categories="cloud" data-tags="Cloud Computing, AWS, Azure, GCP, IaaS, Public, Private, Hybrid">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D16</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Cloud Computing - Architecture and Services</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Cloud</span>
+                                        <span class="log-tag">Architecture</span>
+                                        <span class="log-tag">IaaS/PaaS/SaaS</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Comprehensive exploration of cloud computing — on-demand access to computing resources over the internet. Covers deployment models, service models, major cloud providers, and real-world IoT/data applications.</li>
+                                            <li><strong>Cloud Deployment Models:</strong>
+                                                <ul>
+                                                    <li>Public Cloud: Resources owned by cloud provider, shared among multiple tenants. Economical, scalable, but lower security control. Examples: AWS, Azure, GCP.</li>
+                                                    <li>Private Cloud: Infrastructure hosted on-premises or dedicated provider. High security and control, but higher cost. Suitable for enterprises with sensitive data.</li>
+                                                    <li>Hybrid Cloud: Combines public and private clouds. Sensitive workloads on private, scalable workloads on public. Provides flexibility and optimization.</li>
+                                                    <li>Community Cloud: Shared infrastructure for organizations with common goals or compliance requirements. Collaborative and cost-effective.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Cloud Service Models:</strong>
+                                                <ul>
+                                                    <li>IaaS (Infrastructure as a Service): Provider manages hardware, virtualization, storage, and networking. User manages OS, middleware, application, and data.</li>
+                                                    <li>PaaS (Platform as a Service): Provider also manages OS and runtime databases. Ideal for web developers.</li>
+                                                    <li>SaaS (Software as a Service): Provider manages the entire stack. End-user applications (Gmail, Salesforce, Google Drive).</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 17 -->
+                    <div class="log-card" data-categories="cloud" data-tags="AWS, EC2, S3, VPC, Docker, Containers, Dockerfile, Scaling">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D17</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Introduction to AWS and Docker</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">AWS</span>
+                                        <span class="log-tag">Docker</span>
+                                        <span class="log-tag">Containers</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Introduced the fundamentals of AWS cloud services and Docker container technology. Covered how cloud infrastructure and containerization accelerate modern application deployment.</li>
+                                            <li><strong>AWS Fundamentals:</strong>
+                                                <ul>
+                                                    <li>Compute: EC2 instances, server provisioning, virtual machines in the cloud.</li>
+                                                    <li>Storage: S3 object storage, EBS block storage, and backup strategies.</li>
+                                                    <li>Networking: VPCs, subnets, security groups, and public/private network design.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Docker Basics:</strong> Covered Docker images, containers, Dockerfile syntax, and how containers provide consistent runtime environments across machines.
+                                                <ul>
+                                                    <li>Key Benefits: Faster deployment, environment isolation, reproducible builds, and simplified scaling.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <h4>Exercises</h4>
+                                        <ol>
+                                            <li>Create a simple Dockerfile for a Node.js or Python app.</li>
+                                            <li>Build and run a Docker container locally.</li>
+                                            <li>List AWS services discussed and explain their use cases.</li>
+                                            <li>Design a deployment workflow using AWS and Docker together.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 18 -->
+                    <div class="log-card" data-categories="networks,simulation" data-tags="Assignment, Packet Tracer, Routing, Switching, VLAN, Troubleshooting">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D18</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Cisco Packet Tracer Assignment</h3>
+                                    <span class="log-meta">Faculty: Dr. Koppala Guravaiah</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Assignment</span>
+                                        <span class="log-tag">Packet Tracer</span>
+                                        <span class="log-tag">VLANs</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Assignment Goals:</strong> Completed a practical assignment in Cisco Packet Tracer involving network design, device configuration, and troubleshooting. Focused on implementing real-world network requirements.</li>
+                                            <li><strong>Design Requirements:</strong>
+                                                <ul>
+                                                    <li>Build a multi-subnet office network.</li>
+                                                    <li>Configure routers and switches with static and dynamic routes.</li>
+                                                    <li>Implement VLANs for department separation.</li>
+                                                    <li>Verify connectivity using Simulation Mode.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Verification and Troubleshooting:</strong> Confirmed IP addressing, gateway settings, routing tables, and packet flow. Resolved issues with misconfigured interfaces and ACL mismatches.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 4 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 4</span>
+                    <h2 class="phase-title">IoT Prototyping &amp; Tinkercad Simulations</h2>
+                </div>
+                
+                <div class="logs-grid">
+                    <!-- Day 19 -->
+                    <div class="log-card" data-categories="arduino" data-tags="Arduino, Programming, Sketch, setup, loop, IO, Serial">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D19</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Arduino Programming</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Arduino</span>
+                                        <span class="log-tag">Programming</span>
+                                        <span class="log-tag">Pins I/O</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Introduced Arduino programming and the Arduino IDE. Covered basic sketch structure and how to control digital and analog I/O using code.</li>
+                                            <li><strong>Sketch Structure:</strong>
+                                                <ul>
+                                                    <li><code>setup()</code>: Initialize pins, serial communication, and hardware configurations once at startup.</li>
+                                                    <li><code>loop()</code>: Repeatedly executed code that controls runtime behavior and responds to inputs.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>IO Control:</strong>
+                                                <ul>
+                                                    <li><code>digitalWrite()</code> and <code>digitalRead()</code> for digital pins.</li>
+                                                    <li><code>analogRead()</code> for analog sensor values.</li>
+                                                    <li><code>analogWrite()</code> for PWM motor/LED control.</li>
+                                                    <li><code>Serial.println()</code> for debugging and telemetry monitoring.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 20 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Tinkercad, Simulation, Breadboard, Wiring, Resistors, LEDs, Multimeter">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D20</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Tinkercad Circuits</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Tinkercad</span>
+                                        <span class="log-tag">Circuits</span>
+                                        <span class="log-tag">Simulation</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Hands-on session using Tinkercad Circuits to build and simulate electronic circuits on a virtual breadboard.</li>
+                                            <li><strong>Basic Circuit Elements:</strong>
+                                                <ul>
+                                                    <li>Resistors and LEDs: Used resistors to limit current and light LEDs safely in Tinkercad simulations.</li>
+                                                    <li>Breadboard Wiring: Practiced placing components and wiring rails correctly to avoid short circuits.</li>
+                                                    <li>Power Supply: Configured 5V and GND rails for Arduino and circuit components.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Simulation Workflow:</strong> Designed circuits, connected components, ran simulations, and observed real-time behavior. Used virtual multimeter and oscilloscope tools to validate signals.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 21 -->
+                    <div class="log-card" data-categories="networks,simulation" data-tags="Packet Tracer, Routing, OSPF, RIP, AOD, DSD, MQTT, IoT Messaging">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D21</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Cisco Packet Tracer - Advanced Protocols &amp; MQTT</h3>
+                                    <span class="log-meta">Faculty: Dr. Koppala Guravaiah</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Routing</span>
+                                        <span class="log-tag">MQTT</span>
+                                        <span class="log-tag">Packet Tracer</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Advanced networking topics with an assignment covering Cisco Packet Tracer, routing protocols, and IoT messaging with MQTT.</li>
+                                            <li><strong>Routing Protocols:</strong>
+                                                <ul>
+                                                    <li>OSPF: Link-state routing within an autonomous system | Fast convergence, cost-based paths.</li>
+                                                    <li>RIP: Distance-vector routing for small networks | Simple, hop-count limited to 15.</li>
+                                                    <li>AOD: Ad hoc on-demand routing for wireless mesh networks.</li>
+                                                    <li>DSD: Dynamic source routing for mobile ad hoc networks.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>MQTT and IoT Messaging:</strong> Covered the publish/subscribe model of MQTT, connecting IoT devices to a broker for telemetry and command messaging.</li>
+                                        </ul>
+                                        <h4>Assignment Tasks</h4>
+                                        <ul>
+                                            <li>Configure routers and switches for OSPF and RIP.</li>
+                                            <li>Integrate MQTT-capable devices with a cloud broker.</li>
+                                            <li>Document network topology and describe protocol behaviour.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 22 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Sensors, Tinkercad, Temperature, Photoresistor, LDR, Motion, PIR">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D22</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Sensors Circuits Using Tinkercad</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Sensors</span>
+                                        <span class="log-tag">Tinkercad</span>
+                                        <span class="log-tag">Prototyping</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Built and simulated sensor circuits in Tinkercad, focusing on temperature, light, and motion sensing using virtual components.</li>
+                                            <li><strong>Sensor Examples:</strong>
+                                                <ul>
+                                                    <li>Temperature Sensor (TMP36): Used an analog temperature sensor to read changing voltage values and convert them to Celsius.</li>
+                                                    <li>Photoresistor (LDR): Light sensor that changes resistance with illumination and allows light-based control.</li>
+                                                    <li>Motion Sensor (PIR): Detected movement and generated digital HIGH/LOW signals for the microcontroller.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Simulation Workflow:</strong> Connected sensors to Arduino and observed live readings. Used serial monitor and virtual instruments to confirm correct readings.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 23 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Actuators, Tinkercad, Motors, Relays, Buzzers, PWM, Switching">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D23</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Actuators Circuits Using Tinkercad</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Actuators</span>
+                                        <span class="log-tag">Motors</span>
+                                        <span class="log-tag">Relays</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Designed circuits in Tinkercad that control actuators such as motors, relays, and buzzers from a microcontroller.</li>
+                                            <li><strong>Actuator Types:</strong>
+                                                <ul>
+                                                    <li>DC Motor: Rotational actuator for motion and mechanical force.</li>
+                                                    <li>Relay: Electromechanical switch used to control high-power external loads.</li>
+                                                    <li>Buzzer: Sound output device for alarms and notifications.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Control Techniques:</strong> Used PWM, digital switching, and driver circuits to safely control actuators from Arduino outputs without overloading pins.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 24 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Combined, Tinkercad, Embedded, Feedback, Control, Transistors">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D24</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Combined Sensor &amp; Actuator Circuits</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Feedback Loops</span>
+                                        <span class="log-tag">Tinkercad</span>
+                                        <span class="log-tag">Combined</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Integrated sensor inputs and actuator outputs in virtual circuits to build complete closed-loop embedded control systems using Tinkercad.</li>
+                                            <li><strong>Example Projects:</strong>
+                                                <ul>
+                                                    <li>Temperature sensor controlling a fan motor speed.</li>
+                                                    <li>Light sensor turning LEDs on/off automatically.</li>
+                                                    <li>Motion detector activating a buzzer or relay switch.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Design Considerations:</strong> Ensure correct power levels, use transistors or relays for high-current loads, and validate the logic flow from sensor readings to actuator commands.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 25 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Exam, Tinkercad, Arduino Code, Evaluation, Design, Integration">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D25</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Exam on Tinkercad Circuit</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Exam</span>
+                                        <span class="log-tag">Tinkercad</span>
+                                        <span class="log-tag">Arduino Code</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Exam Requirements:</strong>
+                                                <ul>
+                                                    <li>Prepare one complete Tinkercad circuit using an Arduino board.</li>
+                                                    <li>Use Arduino code to control the circuit and validate it in simulation.</li>
+                                                    <li>Include at least one sensor or input and one actuator or output element.</li>
+                                                    <li>Run the simulation and verify the circuit behavior using Tinkercad tools.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Key Focus Areas Evaluated:</strong> Circuit design, Arduino coding, sensor-actuator integration, simulation accuracy, and the ability to explain the workflow.</li>
+                                            <li><strong>Outcome:</strong> Designed a responsive, integrated circuit with sensors and dynamic triggers, simulating its behavior successfully.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 26 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Review, Tinkercad, Prototyping, Troubleshooting, Best Practices">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D26</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Tinkercad Circuits Review</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Review</span>
+                                        <span class="log-tag">Tinkercad</span>
+                                        <span class="log-tag">Best Practices</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Session Overview:</strong> Final practical review session in Tinkercad to reinforce circuit design, simulation, and debugging skills.</li>
+                                            <li><strong>Hands-on Practice:</strong> Built sample circuits again, verified sensor-actuator interactions, and confirmed component behavior under different conditions.</li>
+                                            <li><strong>Key Takeaways:</strong> Reviewed wiring best practices, simulation troubleshooting, and how virtual prototyping helps design reliable embedded systems.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHASE 5 -->
+            <div class="phase-section">
+                <div class="phase-header">
+                    <span class="phase-number">Phase 5</span>
+                    <h2 class="phase-title">IoT Mini Project Capstone</h2>
+                </div>
+                
+                <div class="logs-grid">
+                    <!-- Day 27 -->
+                    <div class="log-card" data-categories="arduino" data-tags="Mini Project, Kickoff, Design, Soil Moisture, LDR, Alert, ESP">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D27</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Mini Project Kickoff — Plant Monitor Design</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Mini Project</span>
+                                        <span class="log-tag">Plant Monitor</span>
+                                        <span class="log-tag">Design</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Project Scope:</strong> Defined the mini project as an IoT plant-monitoring system that tracks soil moisture, light level, and basic health status. The goal was to design a complete prototype using Arduino or an ESP board with a clear build plan.</li>
+                                            <li><strong>Component Selection:</strong>
+                                                <ul>
+                                                    <li>Soil moisture sensor: for soil hydration monitoring.</li>
+                                                    <li>Light sensor (LDR): to measure ambient brightness.</li>
+                                                    <li>Microcontroller (Arduino/ESP): for data acquisition.</li>
+                                                    <li>Buzzer / LED Alert: for threshold warning indications.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Design Workflow:</strong> Planned the prototype in Tinkercad, mapped the wiring, and wrote the project structure before implementation: sensor read, threshold detection, alert logic, and optional serial/cloud output.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 28 -->
+                    <div class="log-card" data-categories="arduino,simulation" data-tags="Build, Demo, Testing, Debugging, Plant Monitor, Threshold">
+                        <div class="log-card-header">
+                            <div class="log-card-header-left">
+                                <div class="log-day-badge">D28</div>
+                                <div class="log-title-area">
+                                    <h3 class="log-title">Mini Project Build &amp; Demo</h3>
+                                    <span class="log-meta">Faculty: Dr. Shajulin Benedict</span>
+                                </div>
+                            </div>
+                            <div class="log-toggle-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                        </div>
+                        <div class="log-card-body-wrapper">
+                            <div class="log-card-body-content">
+                                <div class="log-card-body">
+                                    <div class="log-tags">
+                                        <span class="log-tag">Build &amp; Demo</span>
+                                        <span class="log-tag">Testing</span>
+                                        <span class="log-tag">Debugging</span>
+                                    </div>
+                                    <div class="log-details">
+                                        <ul>
+                                            <li><strong>Build Summary:</strong> Implemented the mini project prototype in Tinkercad and reviewed the integration of sensors, microcontroller, and alert components. Verified that readings were consistent and the system could indicate plant health reliably.</li>
+                                            <li><strong>Testing &amp; Debugging:</strong> Validated sensor output ranges, adjusted resistor values, fixed wiring mistakes, and confirmed that the alert triggers at the intended thresholds.</li>
+                                            <li><strong>Demo Outcome:</strong> Completed virtual demo showcasing responsive alerts (LED/Buzzer warnings) based on varying soil dryness and dark/light ambient conditions.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

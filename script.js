@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initScrollProgress();
     initMouseTracking();
+    initDailyWorkFilter();
+    initDailyWorkAccordions();
 });
 
 // ===== THEME TOGGLE =====
@@ -338,7 +340,7 @@ function initScrollProgress() {
 // ===== MOUSE TRACKING GLOW EFFECT =====
 function initMouseTracking() {
     document.addEventListener('mousemove', e => {
-        const cards = document.querySelectorAll('.bento-card');
+        const cards = document.querySelectorAll('.bento-card, .log-card');
         for (const card of cards) {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -347,5 +349,124 @@ function initMouseTracking() {
             card.style.setProperty('--mouse-x', `${x}px`);
             card.style.setProperty('--mouse-y', `${y}px`);
         }
+    });
+}
+
+// ===== DAILY WORK TIMELINE LOGS INTERACTION =====
+
+// Toggles log accordions
+function initDailyWorkAccordions() {
+    const logCards = document.querySelectorAll('.log-card');
+    
+    logCards.forEach(card => {
+        const header = card.querySelector('.log-card-header');
+        if (!header) return;
+        
+        header.addEventListener('click', (e) => {
+            // Check if user clicked on a link or button inside header
+            if (e.target.closest('a') || e.target.closest('button')) {
+                return;
+            }
+            
+            // Toggle open state on clicked card
+            const isOpen = card.classList.contains('open');
+            
+            // Optional: Close other cards (uncomment if you want standard accordion behavior)
+            /*
+            logCards.forEach(otherCard => {
+                if (otherCard !== card) {
+                    otherCard.classList.remove('open');
+                }
+            });
+            */
+            
+            card.classList.toggle('open');
+        });
+    });
+}
+
+// Filters log cards based on search query and category buttons
+function initDailyWorkFilter() {
+    const searchInput = document.querySelector('.search-input');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const logCards = document.querySelectorAll('.log-card');
+    const phaseSections = document.querySelectorAll('.phase-section');
+    const emptyState = document.querySelector('.empty-logs-state');
+    
+    if (!searchInput && filterButtons.length === 0) return;
+    
+    let activeFilter = 'all';
+    let searchQuery = '';
+    
+    // Filter logic function
+    function applyFilters() {
+        let totalVisible = 0;
+        
+        // Loop over each phase section first
+        phaseSections.forEach(phase => {
+            let visibleInPhase = 0;
+            const cardsInPhase = phase.querySelectorAll('.log-card');
+            
+            cardsInPhase.forEach(card => {
+                const title = card.querySelector('.log-title')?.textContent.toLowerCase() || '';
+                const details = card.querySelector('.log-details')?.textContent.toLowerCase() || '';
+                const meta = card.querySelector('.log-meta')?.textContent.toLowerCase() || '';
+                const tags = card.getAttribute('data-tags')?.toLowerCase() || '';
+                
+                // Check if search matches
+                const matchesSearch = searchQuery === '' || 
+                    title.includes(searchQuery) || 
+                    details.includes(searchQuery) || 
+                    meta.includes(searchQuery) || 
+                    tags.includes(searchQuery);
+                    
+                // Check if category matches
+                const cardCategories = card.getAttribute('data-categories')?.split(',') || [];
+                const matchesCategory = activeFilter === 'all' || cardCategories.includes(activeFilter);
+                
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'block';
+                    visibleInPhase++;
+                    totalVisible++;
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('open'); // close if hidden
+                }
+            });
+            
+            // Hide phase section if there are no matching cards inside it
+            if (visibleInPhase > 0) {
+                phase.style.display = 'block';
+            } else {
+                phase.style.display = 'none';
+            }
+        });
+        
+        // Show/hide empty state
+        if (emptyState) {
+            if (totalVisible === 0) {
+                emptyState.style.display = 'block';
+            } else {
+                emptyState.style.display = 'none';
+            }
+        }
+    }
+    
+    // Search listener
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            applyFilters();
+        });
+    }
+    
+    // Category filter button listener
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeFilter = btn.getAttribute('data-filter') || 'all';
+            applyFilters();
+        });
     });
 }

@@ -1784,3 +1784,374 @@ img {
     .bento-col-span-2, .bento-col-span-3, .bento-col-span-4 { grid-column: span 1; }
     .bento-row-span-2 { grid-row: span 1; }
 }
+
+/* ===== INTERACTIVE INTERNSHIP LOGS STYLING ===== */
+
+/* Controls (Filters & Search) */
+.controls-container {
+    max-width: var(--container-width);
+    margin: -40px auto 40px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 10;
+}
+
+.controls-panel {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.search-box-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-glow);
+    background: var(--bg-card);
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+    transition: color var(--transition-fast);
+}
+
+.search-input:focus + .search-icon {
+    color: var(--primary);
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--primary-light);
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Phase Headers */
+.phase-section {
+    margin-bottom: 60px;
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.phase-number {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--bg-secondary);
+    padding: 4px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.phase-title {
+    font-family: var(--font-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Interactive Log Card Grid */
+.logs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.log-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--transition-medium);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+}
+
+.log-card:hover {
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.log-card-header {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    user-select: none;
+}
+
+.log-card-header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.log-day-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-md);
+    background: hsla(210, 100%, 50%, 0.08);
+    color: var(--primary);
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    transition: all var(--transition-fast);
+}
+
+.log-card:hover .log-day-badge {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.log-title-area {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.log-title {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.log-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.log-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition: all var(--transition-medium);
+    flex-shrink: 0;
+}
+
+.log-card.open .log-toggle-icon {
+    transform: rotate(180deg);
+    background: var(--primary);
+    color: white;
+}
+
+/* Accordion expand/collapse using Grid */
+.log-card-body-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.log-card.open .log-card-body-wrapper {
+    grid-template-rows: 1fr;
+}
+
+.log-card-body-content {
+    overflow: hidden;
+}
+
+.log-card-body {
+    padding: 0 24px 28px 90px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0;
+    transition: border-color var(--transition-fast);
+}
+
+.log-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.log-tag {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+}
+
+.log-details {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.log-details h4 {
+    color: var(--text-primary);
+    margin: 20px 0 10px;
+    font-family: var(--font-primary);
+    font-size: 1.15rem;
+}
+
+.log-details p {
+    margin-bottom: 12px;
+}
+
+.log-details ul, .log-details ol {
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+
+.log-details li {
+    margin-bottom: 6px;
+}
+
+.log-details pre {
+    background: hsl(220, 25%, 11%);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 90%);
+    margin: 16px 0;
+}
+
+.log-details code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    background: var(--bg-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--primary-light);
+}
+
+.log-details pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+}
+
+/* Empty search state */
+.empty-logs-state {
+    text-align: center;
+    padding: 60px 24px;
+    background: var(--bg-card);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    display: none;
+}
+
+.empty-logs-state svg {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.empty-logs-state h3 {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+/* Mobile responsive logs spacing */
+@media (max-width: 768px) {
+    .controls-panel {
+        padding: 16px;
+    }
+
+    .log-card-header {
+        padding: 16px;
+    }
+
+    .log-card-body {
+        padding: 0 16px 20px 16px;
+    }
+
+    .log-day-badge {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .log-title {
+        font-size: 1.1rem;
+    }
+
+    .phase-title {
+        font-size: 1.4rem;
+    }
+}
+
