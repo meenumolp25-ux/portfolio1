@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenumol Prakash — Home</title>
+    <meta name="description" content="Portfolio of Meenumol Prakash — Engineering Student and IoT Assistant Intern for PM Vikas Program.">
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:title" content="Meenumol Prakash — Portfolio">
+    <meta property="og:description" content="Engineering Student & IoT Assistant Intern @ IIIT Kottayam. Passionate about community development.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meenumol Prakash — Portfolio">
+    <meta name="twitter:description" content="Engineering Student & IoT Assistant Intern @ IIIT Kottayam. Passionate about community development.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-accent">M</span>eenumol
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pmvikas.html" class="nav-link">PM Vikas</a></li>
+                <li><a href="daily-work.html" class="nav-link">Daily Work</a></li>
+                <li><a href="about.html" class="nav-link">About & Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO / INTRODUCTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Welcome to my portfolio
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="text-gradient">Meenumol Prakash</span>
+            </h1>
+            <p class="hero-subtitle">
+                Engineering Student &bull; IoT Assistant Intern @ IIIT Kottayam &bull; PM Vikas
+            </p>
+            <p class="hero-description">
+                I am an engineering student at the College of Engineering Kidangoor and an IoT Assistant Intern for the PM Vikas Program at IIIT Kottayam. 
+                I am deeply passionate about merging technology with community development, using IoT and digital solutions 
+                to empower communities and drive grassroots social impact.
+            </p>
+            <div class="hero-actions">
+                <a href="pmvikas.html" class="btn btn-primary">
+                    <span>Explore PM Vikas</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="about.html#contact" class="btn btn-outline">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Families Helped</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Communities Served</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="hero-image-wrapper">
+                <div class="hero-ring hero-ring-1"></div>
+                <div class="hero-ring hero-ring-2"></div>
+                <div class="hero-avatar">
+                    <img src="image.png" alt="Meenumol Prakash" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="avatar-placeholder" style="display: none;">
+                        <span>MP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="pmvikas.html" class="scroll-link">
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+                <span>Next Page</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== EXPERTISE BENTO GRID ===== -->
+    <section class="pmvikas-components">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">My <span class="text-gradient">Expertise</span></h2>
+                <p class="section-subtitle">Bridging the gap between cutting-edge technology and community impact.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-col-span-2">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3 class="bento-title">Internet of Things (IoT)</h3>
+                        <p class="bento-text">Developing connected solutions for smart cities, industrial environments, and elderly care using advanced microcontrollers and sensors.</p>
+                        <ul class="bento-list">
+                            <li class="bento-tag">Arduino</li>
+                            <li class="bento-tag">Sensors</li>
+                            <li class="bento-tag">M2M</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bento-card bento-col-span-2 bento-row-span-2 glass">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 class="bento-title">Community Impact</h3>
+                        <p class="bento-text">Working with the PM Vikas Program to deploy technical solutions that provide holistic development for minority communities.</p>
+                        <p class="bento-text" style="margin-top: 16px;">Leading grassroot initiatives and driving tangible change through technical education and deployment.</p>
+                        <div style="margin-top:auto">
+                            <a href="pmvikas.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem; margin-top:20px;">Explore My Role →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card bento-col-span-1">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3 class="bento-title">Network Theory</h3>
+                        <p class="bento-text">Analysis of complex circuits, mesh/nodal analysis.</p>
+                    </div>
+                </div>
+
+                <div class="bento-card bento-col-span-1">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/></svg>
+                        </div>
+                        <h3 class="bento-title">Digital Logic</h3>
+                        <p class="bento-text">Combinational & sequential circuit synthesis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAGE NAVIGATOR ===== -->
+    <section class="page-navigator">
+        <div class="section-container">
+            <div class="page-nav-grid">
+                <a href="pmvikas.html" class="page-nav-card">
+                    <div class="page-nav-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="page-nav-text">
+                        <h3>PM Vikas Program</h3>
+                        <p>Learn about the flagship initiative for holistic development of minority communities.</p>
+                    </div>
+                    <div class="page-nav-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                </a>
+                <a href="about.html" class="page-nav-card">
+                    <div class="page-nav-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div class="page-nav-text">
+                        <h3>About & Contact</h3>
+                        <p>Get to know me better and reach out for collaborations and inquiries.</p>
+                    </div>
+                    <div class="page-nav-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-accent">M</span>eenumol Prakash
+                </a>
+                <p class="footer-text">Dedicated to community empowerment through the PM Vikas Program.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="pmvikas.html">PM Vikas</a>
+                <a href="daily-work.html">Daily Work</a>
+                <a href="about.html">About</a>
+                <a href="about.html#contact">Contact</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meenumol Prakash. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
